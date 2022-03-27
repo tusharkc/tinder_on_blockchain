@@ -1,9 +1,17 @@
-import styles from "../styles/Home.module.css";
+import Cards from "../components/Cards";
+import Header from "../components/Header";
 
+const style = {
+  wrapper: `h-screen w-screen flex flex-col bg-[#222229]`,
+  cardsContainer: `flex flex-col items-center justify-center flex-1`,
+};
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <h1>Hello World</h1>
+    <div className={style.wrapper}>
+      <Header />
+      <div className={style.cardsContainer}>
+        <Cards />
+      </div>
     </div>
   );
 }
